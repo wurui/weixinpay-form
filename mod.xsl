@@ -34,9 +34,11 @@
                 <xsl:choose>
                     <xsl:when test="data/weixinpayform/mweb_url">
                         微信支付调用中...
-                        <script>
-                            location.href='<xsl:value-of select="data/weixinpayform/mweb_url"/>';
-                        </script>
+                        <xsl:if test="env/domain != 'demo'"><!-- 防止在build时跳转走了-->
+                            <script>
+                                location.href='<xsl:value-of select="data/weixinpayform/mweb_url"/>';
+                            </script>
+                        </xsl:if>
                     </xsl:when>
                     <xsl:when test="data/weixinpayform/package !='' ">
                         微信支付调用中...
