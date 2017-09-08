@@ -1,3 +1,55 @@
-.oxmod-weixinpay-form{
-/* CSS */
- }
+.oxmod-weixinpay-form {
+  /* CSS */
+}
+.oxmod-weixinpay-form .auto-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.oxmod-weixinpay-form .error {
+  color: #f10;
+  text-align: center;
+}
+.oxmod-weixinpay-form .orderwrap {
+  background-color: #eee;
+  box-shadow: 0 0 0px 2px rgba(200, 200, 200, 0.3);
+}
+.oxmod-weixinpay-form .orderwrap > h3 {
+  margin: 0px;
+  padding: 10px;
+}
+.oxmod-weixinpay-form .order-info {
+  width: 100%;
+}
+.oxmod-weixinpay-form .order-info th,
+.oxmod-weixinpay-form .order-info td {
+  color: #555;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: none;
+  border-top: dashed .5px #fff;
+}
+.oxmod-weixinpay-form .order-info th {
+  text-align: left;
+  font-weight: 300;
+}
+.oxmod-weixinpay-form .order-info td {
+  text-align: right;
+}
+.oxmod-weixinpay-form .price {
+  color: #f60;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.oxmod-weixinpay-form .price:before {
+  content: '\00a5\20';
+  font-family: sans-serif;
+  font-size: .8em;
+}
+.oxmod-weixinpay-form .wxpaybox {
+  text-align: center;
+  color: #999;
+}
+.oxmod-weixinpay-form .alipay,
+.oxmod-weixinpay-form .wxpay {
+  text-align: center;
+}
