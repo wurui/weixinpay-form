@@ -18,5 +18,8 @@
             <title>扫码车贴2张</title>
             <totalfee>0.12</totalfee>
         </order>
+        <weixinpayform>
+
+        </weixinpayform>
     </data>
 </root>
