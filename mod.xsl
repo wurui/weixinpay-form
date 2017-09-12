@@ -1,5 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:oxm="https://www.openxsl.com">
     <xsl:template match="/root" name="wurui.weixinpay-form">
+        <xsl:param name="backurl"/>
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-weixinpay-form" ox-mod="weixinpay-form">
 
@@ -48,7 +49,8 @@
                             </xsl:for-each>
                         </form>
                         <script>
-                            var backurl=decodeURIComponent('<xsl:value-of select="q/backurl"/>');
+                            var backurl=decodeURIComponent('<xsl:value-of select="q/backurl"/>'||'<xsl:value-of
+                                select="$backurl"/>');
                         </script>
                         <script><![CDATA[
                     var f=document.forms['payform'];
