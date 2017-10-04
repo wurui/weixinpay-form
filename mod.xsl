@@ -103,7 +103,9 @@
                         <h3 class="error">
                             无法支付!
                             <br/>商家未开通微信支付
+
                         </h3>
+                        <xsl:value-of select="data/weixinpayform"/>
                     </xsl:otherwise>
                 </xsl:choose>
 
